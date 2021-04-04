@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I recently joined Microsoft. Before I received a Ph.D. from Carnegie Mellon University on the topic of Machine Learning for Audio Signal Processing, supervised by Prof. Bhiksha Raj and Prof. Ian Lane. Previously, I worked as a Staff Researcher at ICSI - UC Berkeley in the Audio & Multimedia Lab. My research focuses on Acoustic Intelligence, Audio Analytics and Sound Understanding.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
