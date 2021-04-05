@@ -9,7 +9,7 @@ nav: true
 
 <h4>Mentoring:</h4>
 
-2020: Spring 2021 [Tech Resilience Mentor Program](https://www.microsoft.com/inculture/social-good/inclusion/tech-resilience/).
+2020: Spring 2021 [Microsoft's Tech Resilience Mentor Program](https://www.microsoft.com/inculture/social-good/inclusion/tech-resilience/).
 
 2019: AI Undergraduate Research Mentoring in Carnegie Mellon University.
 
