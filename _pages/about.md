@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-description: <a href="#">Affiliations</a>. Microsoft
+description: #<a href="#">Affiliations</a>. Microsoft
 
 profile:
   align: right
