@@ -68,7 +68,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # -----------------------------------------------------------------------------
 
 blog_name: clap  # your blog must have a name for it to show up in the nav bar
-blog_description: :clap: #a simple whitespace theme for academics
+blog_description:  #a simple whitespace theme for academics
 permalink: /blog/:year/:title/
 
 # Pagination
@@ -142,8 +142,8 @@ github: [metadata]
 
 scholar:
 
-  last_name: Einstein
-  first_name: [Albert, A.]
+  last_name: Elizalde
+  first_name: [Benjamin]
 
   style: apa
   locale: en
