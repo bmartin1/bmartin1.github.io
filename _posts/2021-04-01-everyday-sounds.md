@@ -26,6 +26,7 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
     We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
     —Anais Nin
 </blockquote>
+-->
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -35,7 +36,7 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 <div class="caption">
     The acoustic scene of a kitchen is composed by sounds that carry a meaning and allow inhabitants to react accordingly. For example, the sound of the espresso pot whistling indicates that the water is hot.
 </div>
--->
+
 
 Everyday situations are rarely silent, and in most cases, sounds occur around us, many of which can be interpreted to make us react accordingly.
 <br>
