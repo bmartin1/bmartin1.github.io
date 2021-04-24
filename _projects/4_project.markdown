@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
+title: 4 nels
+description: Cross-modal search and retrieval of sounds.
+img: /assets/img/7.jpg
+importance: 2
 ---
 
 Every project has a beautiful feature showcase page.
