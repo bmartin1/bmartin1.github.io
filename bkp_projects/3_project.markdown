@@ -1,9 +1,10 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: /assets/img/1.jpg
-importance: 3
+title: 3 nels
+description: Improving sound recognizers with Web audio.
+img: /assets/img/7.jpg
+redirect: https://unsplash.com
+importance: 2
 ---
 
 Every project has a beautiful feature showcase page.

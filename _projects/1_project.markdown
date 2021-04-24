@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: 1 NELS
+description: A Never-Ending Learner of Sounds to hear and understand the Web.
 img: /assets/img/12.jpg
 importance: 1
 ---
