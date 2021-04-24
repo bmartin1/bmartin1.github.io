@@ -53,7 +53,7 @@ Think about how much information can be inferred by the acoustics in the kitchen
   Examples of applications that employ systems capable of Acoustic Intelligence.
 </div>
 
- Acoustic Intelligence (or Sound Understanding or Audio Analytics) is an emerging field of Machine Hearing [1], which aims to build systems that can automatically recognize sounds in order to extract meaning that helps us react accordingly. Such artificial intelligence-based systems rely on Machine Learning and Audio Signal Processing, and are being used in multiple applications.
+ Acoustic Intelligence (or Sound Understanding or Audio Analytics) is a field that aims to build systems that can automatically recognize sounds in order to extract meaning that helps us react accordingly. This emerging field is part of Machine Hearing, and involves sound-related tasks that resemble human hearing, like speech and music processing, but also tasks that have nothing to do with human hearing, like sonography, seismic and sonar [1]. Acoustically intelligent systems are based on Artificial Intelligence and rely on Machine Learning and Audio Signal Processing. Such systems are being used in multiple applications.
 
 •	In Healthcare, [Sound Intelligence](https://www.soundintel.com/) has developed acoustic monitoring systems for hospital rooms to identify sounds that imply emergencies for patients in order to alert the caregiver, such as the sound of a person moaning.
 
