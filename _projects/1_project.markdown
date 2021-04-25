@@ -34,7 +34,7 @@ Broadly speaking, NELS crawls audio from YouTube and indexes it with Sound Event
 
 In the next project posts I will present research done in the different modules to advance the state of NELS. NELS is inspired by and aimed to emulate two similar and more mature projects at Carnegie Mellon University, the Never-ending Language learner led by Tom Mitchel and the Never-ending Image learner led by Abhinav Gupta [3].
 
-Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors. After finishing my PhD in 2020 I left the project.  
+Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors.  
 
 <h3>References</h3>
 1. Elizalde, Benjamin Martinez. "Never-Ending Learning of Sounds." Diss. Carnegie Mellon University, 2020.
