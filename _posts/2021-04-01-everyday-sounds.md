@@ -28,6 +28,7 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 </blockquote>
 -->
 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/kitchen.jpg' | relative_url }}" alt="" title="example image"/>
@@ -38,11 +39,9 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 </div>
 
 
-Everyday situations are rarely silent, and in most cases, sounds occur around us, many of which can be interpreted to make us react accordingly.
-<br>
+<p align="justify">Everyday situations are rarely silent, and in most cases, sounds occur around us, many of which can be interpreted to make us react accordingly. </p>
 
-Think about how much information can be inferred by the acoustics in the kitchen depicted in the figure. Some sound events are produced in order to convey specific messages, such as a espresso pot whistling indicates that the water is hot, or the microwave's bell alerts that the food is ready. Other sounds occur without the intention of conveying a message, but based on the context, these sounds can be meaningful, such as the refrigerator's steady buzzing indicates that it's on and working normally, a toaster ejecting bread indicates it's toasted, and the scrubbing of ceramic plates with water flowing on and off indicates that someone is washing the dishes. This complex array of sound events represent an acoustic scene, which convey essential information in people's lives.
-<br><br>
+<p align="justify">Think about how much information can be inferred by the acoustics in the kitchen depicted in the figure. Some sound events are produced in order to convey specific messages, such as a espresso pot whistling indicates that the water is hot, or the microwave's bell alerts that the food is ready. Other sounds occur without the intention of conveying a message, but based on the context, these sounds can be meaningful, such as the refrigerator's steady buzzing indicates that it's on and working normally, a toaster ejecting bread indicates it's toasted, and the scrubbing of ceramic plates with water flowing on and off indicates that someone is washing the dishes. This complex array of sound events represent an acoustic scene, which convey essential information in people's lives. </p> <br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -53,25 +52,27 @@ Think about how much information can be inferred by the acoustics in the kitchen
   Examples of applications that employ systems capable of Acoustic Intelligence.
 </div>
 
- Acoustic Intelligence (or Sound Understanding or Audio Analytics) is a field that aims to build systems that can automatically recognize sounds in order to extract meaning that helps us react accordingly. This emerging field is part of Machine Hearing, and involves sound-related tasks that resemble human hearing, like speech and music processing, but also tasks that have nothing to do with human hearing, like sonography, seismic and sonar [1]. Acoustically intelligent systems are based on Artificial Intelligence and rely on Machine Learning and Audio Signal Processing. Such systems are being used in multiple applications.
+ <p align="justify">Acoustic Intelligence (or Sound Understanding or Audio Analytics) is a field that aims to build systems that can automatically recognize sounds in order to extract meaning that helps us react accordingly. This emerging field is part of Machine Hearing, and involves sound-related tasks that resemble human hearing, like speech and music processing, but also tasks that have nothing to do with human hearing, like sonography, seismic and sonar [1]. Acoustically intelligent systems are based on Artificial Intelligence and rely on Machine Learning and Audio Signal Processing. Such systems are being used in multiple applications.</p>
 
-•	In Healthcare, [Sound Intelligence](https://www.soundintel.com/) has developed acoustic monitoring systems for hospital rooms to identify sounds that imply emergencies for patients in order to alert the caregiver, such as the sound of a person moaning.
 
-•	In 2020, the Apple Watch uses its motion sensors and microphones to detect hand-washing movements and water-flowing sounds. If the user finishes washing their hands too early, the watch will prompt a message to keep washing [2].
+ <p align="justify">•	In Healthcare, <a href="https://www.soundintel.com/">Sound Intelligence</a> has developed acoustic monitoring systems for hospital rooms to identify sounds that imply emergencies for patients in order to alert the caregiver, such as the sound of a person moaning.</p>
 
-•	For Smart Homes, [Audio Analytics](https://www.audioanalytic.com/) employ acoustic sensors to detect domestic and safety related sounds, such as dog barking, glass breaking and baby crying.
+ <p align="justify">•	In 2020, the Apple Watch uses its motion sensors and microphones to detect hand-washing movements and water-flowing sounds. If the user finishes washing their hands too early, the watch will prompt a message to keep washing [2].</p>
 
-•	Digital assistants identify human-produced sounds to enhance our interaction with them. For example, Amazon Alexa recognizes spoken language and  will soon recognize laughter too. We could take laughter recognition one step further, if Alexa tells us a joke and recognizes our different types of laughter, it could adapt the jokes to our humor.
+ <p align="justify">•	For Smart Homes, <a href="https://www.audioanalytic.com/">Audio Analytics</a> employ acoustic sensors to detect domestic and safety related sounds, such as dog barking, glass breaking and baby crying.</p>
 
-•	In Automotive, Waymo's self-driving cars identify sounds to respond safely to emergency vehicles and traffic warnings [3]. For example, the sound of a wailing siren from an emergency vehicle can be heard miles away. Depending on where the sound is coming from, the car will react accordingly, if it's coming from behind, the car has to pull over, but if it's coming ahead the car has to stop.
+ <p align="justify">•	Digital assistants identify human-produced sounds to enhance our interaction with them. For example, Amazon Alexa recognizes spoken language and  will soon recognize laughter too. We could take laughter recognition one step further, if Alexa tells us a joke and recognizes our different types of laughter, it could adapt the jokes to our humor.</p>
 
-•	For Security and Surveillance in the urban context, sounds are identified to detect safety-related events, like glass breaking or gun shots. New York University and local authorities are doing this as part of the [SONYC](https://wp.nyu.edu/sonyc/) project, which uses acoustic sensors located across New York City's downtown.
+ <p align="justify">•	In Automotive, Waymo's self-driving cars identify sounds to respond safely to emergency vehicles and traffic warnings [3]. For example, the sound of a wailing siren from an emergency vehicle can be heard miles away. Depending on where the sound is coming from, the car will react accordingly, if it's coming from behind, the car has to pull over, but if it's coming ahead the car has to stop.</p>
 
-•	Acoustic monitoring of machinery identify sounds to determine whether machines need to be repaired or replaced. For example, in 2020 Bosch Research presented a device called [SoundSee](https://www.bosch.com/stories/acoustic-sensors/) which monitors machines in the International Space Station.
+ <p align="justify">•	For Security and Surveillance in the urban context, sounds are identified to detect safety-related events, like glass breaking or gun shots. New York University and local authorities are doing this as part of the <a href="https://wp.nyu.edu/sonyc/">SONYC</a> project, which uses acoustic sensors located across New York City's downtown.</p>
 
-•	Everyday people record their lives and shared them in social media. In fact, over 82% of the consumer traffic on the Internet are videos according to CISCO [4]. The soundtrack contains all kinds of sounds that can be used to index and organize content. Microsoft began offering recognition of audience reaction sounds (e.g. laughing, clapping, booing) for the [Azure's Video Indexer](https://azure.microsoft.com/en-us/services/media-services/video-indexer/) tool in 2020. YouTube started in 2017 by adding captioning of three sounds to their videos [5].
+ <p align="justify">•	Acoustic monitoring of machinery identify sounds to determine whether machines need to be repaired or replaced. For example, in 2020 Bosch Research presented a device called <a href="https://www.bosch.com/stories/acoustic-sensors/">SoundSee</a> which monitors machines in the International Space Station.</p>
 
-Current products recognize a few sounds, but we should look into the next frontiers of Acoustic Intelligence. The next generation of the technology will aim to understand the meaning of sounds in a given context, similar to the Waymo example. Software that processes sounds will not only be done in isolation, but also in multimodal setups, combining for example speech, text, images and haptic feedback. On the hardware side, audio will be processed by any device with a microphone, headphones, hearing aids, speakers, and acoustic sensors. Applications will include Entertainment, Health, Automotive, Surveillance and Monitoring. Consumer products are expected to grow exponentially their market size and reach USD 4.42 billion by 2025 [6]. In conclusion, Acoustic Intelligence will enhance how computers hear beyond speech and will be part of our everyday lives.
+ <p align="justify">•	Everyday people record their lives and shared them in social media. In fact, over 82% of the consumer traffic on the Internet are videos according to CISCO [4]. The soundtrack contains all kinds of sounds that can be used to index and organize content. Microsoft began offering recognition of audience reaction sounds (e.g. laughing, clapping, booing) for the <a href="https://azure.microsoft.com/en-us/services/media-services/video-indexer/">Azure's Video Indexer</a>  tool in 2020. YouTube started in 2017 by adding captioning of three sounds to their videos [5].</p>
+
+
+<p align="justify">Current products recognize a few sounds, but we should look into the next frontiers of Acoustic Intelligence. The next generation of the technology will aim to understand the meaning of sounds in a given context, similar to the Waymo example. Software that processes sounds will not only be done in isolation, but also in multimodal setups, combining for example speech, text, images and haptic feedback. On the hardware side, audio will be processed by any device with a microphone, headphones, hearing aids, speakers, and acoustic sensors. Applications will include Entertainment, Health, Automotive, Surveillance and Monitoring. Consumer products are expected to grow exponentially their market size and reach USD 4.42 billion by 2025 [6]. In conclusion, Acoustic Intelligence will enhance how computers hear beyond speech and will be part of our everyday lives.</p>
 
 <h3>References</h3>
 1. Lyon, Richard F. "Machine hearing: An emerging field [exploratory dsp]." IEEE signal processing magazine 27.5 (2010): 131-139.

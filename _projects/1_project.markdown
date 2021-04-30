@@ -6,8 +6,8 @@ img: /assets/img/NELS_diagram.png
 importance: 1
 ---
 
-Hearing machines that understand sounds like humans do require computational programs that can learn from years of accumulated diverse acoustics. They must use associated knowledge to guide subsequent learning and organize what they hear, learn names for recognizable events, scenes, objects, actions, materials, places, and retrieve sounds by reference to those names. These machines must also continuously improve their hearing competence to encompass all the diversity and scale of the acoustics in the world. The ultimate goals of hearing machines inspired my PhD project called Never-Ending Learner of Sounds (NELS) [1].
-<br><br>
+<p align="justify">Hearing machines that understand sounds like humans do require computational programs that can learn from years of accumulated diverse acoustics. They must use associated knowledge to guide subsequent learning and organize what they hear, learn names for recognizable events, scenes, objects, actions, materials, places, and retrieve sounds by reference to those names. These machines must also continuously improve their hearing competence to encompass all the diversity and scale of the acoustics in the world. The ultimate goals of hearing machines inspired my PhD project called Never-Ending Learner of Sounds (NELS) [1].</p>
+<br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -18,8 +18,8 @@ Hearing machines that understand sounds like humans do require computational pro
     A Never-Ending Learner of Sounds (NELS) to hear and understand the Web.
 </div>
 
-NELS aims to continuously hear and understand the Web, automatically learn new knowledge about sounds, organize and index audio content, and make the content available for people to query and recover all kinds of information. In doing this, we must address many challenges, for example, the Web has an unbounded number of sounds, training and evaluating Machine Learning models must deal with recordings that are noisy, unstructured, and unlabeled, we must define what knowledge to learn for sounds, and we must understand how to search for sounds, because describing acoustic phenomena in words is hard. For example, the sound of water is one of the most distinguishable sounds, but how to describe it without using the word water?
-<br><br>
+<p align="justify">NELS aims to continuously hear and understand the Web, automatically learn new knowledge about sounds, organize and index audio content, and make the content available for people to query and recover all kinds of information. In doing this, we must address many challenges, for example, the Web has an unbounded number of sounds, training and evaluating Machine Learning models must deal with recordings that are noisy, unstructured, and unlabeled, we must define what knowledge to learn for sounds, and we must understand how to search for sounds, because describing acoustic phenomena in words is hard. For example, the sound of water is one of the most distinguishable sounds, but how to describe it without using the word water?</p>
+<br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -30,9 +30,9 @@ NELS aims to continuously hear and understand the Web, automatically learn new k
     A Never-Ending Learner of Sounds (NELS) to hear and understand the Web.
 </div>
 
-Broadly speaking, NELS crawls audio from YouTube and indexes it with Sound Event Recognition. I chose YouTube because it’s the largest archive of sounds and it resembles the diverse acoustics of the world. The downloaded audio is segmented and passed to a SER system that,  depending on its posterior probabilities, will either discard the segment or index the segment with one of the pre-defined categories. The indexed segments are made available for search and retrieval through a website ([nels.cs.cmu.edu](nels.cs.cmu.edu)).
+<p align="justify">Broadly speaking, NELS crawls audio from YouTube and indexes it with Sound Event Recognition. I chose YouTube because it’s the largest archive of sounds and it resembles the diverse acoustics of the world. The downloaded audio is segmented and passed to a SER system that,  depending on its posterior probabilities, will either discard the segment or index the segment with one of the pre-defined categories. The indexed segments are made available for search and retrieval through a website <i>nels.cs.cmu.edu</i>.</p>
 
-In the next project posts I will present research done in the different modules to advance the state of NELS. NELS is inspired by and aimed to emulate two similar and more mature projects at Carnegie Mellon University, the Never-ending Language learner led by Tom Mitchel and the Never-ending Image learner led by Abhinav Gupta [3]. Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors.  
+<p align="justify">In the next project posts I will present research done in the different modules to advance the state of NELS. NELS is inspired by and aimed to emulate two similar and more mature projects at Carnegie Mellon University, the Never-ending Language learner led by Tom Mitchel and the Never-ending Image learner led by Abhinav Gupta [3]. Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors. </p>
 
 <h3>References</h3>
 1. Elizalde, Benjamin Martinez. "Never-Ending Learning of Sounds." Diss. Carnegie Mellon University, 2020.
