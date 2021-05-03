@@ -1,7 +1,7 @@
 ---
 layout: page
 title: 2 NELS
-description: Sound Recognition on audio from YouTube in DCASE.
+description: NELS hears audio from YouTube in DCASE.
 img: /assets/img/DCASE_website.jpg
 importance: 2
 ---
@@ -29,7 +29,7 @@ Three more tasks, unrelated to Web audio, were organized by the audio group at T
     </div>
 </div>
 <div class="caption">
-    A Never-Ending Learner of Sounds (NELS) to hear and understand the Web.
+  DCASE 2017 Task 4: Large-scale weakly supervised sound event detection for smart cars. The main task was divided into two sub tasks, tagging and detecting sound events.
 </div>
 
 <p align="justify">The clips had weakly labeled categories, meaning that if we have a 10-second clip that contains "Car horn”,  we don’t know when the sound starts and ends, if it is a single honk, multiple honks or a continuous honking for 10 seconds, and other competing sounds may be present like the sound of car braking.</p>
