@@ -67,7 +67,7 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
 
  <p align="justify">•	For Security and Surveillance in the urban context, sounds are identified to detect safety-related events, like glass breaking or gun shots. New York University and local authorities are doing this as part of the <a href="https://wp.nyu.edu/sonyc/">SONYC</a> project, which uses acoustic sensors located across New York City's downtown.</p>
 
- <p align="justify">•	Acoustic monitoring of machinery identify sounds to determine whether machines need to be repaired or replaced. For example, in 2020 Bosch Research presented a device called <a href="https://www.bosch.com/stories/acoustic-sensors/">SoundSee</a> which monitors machines in the International Space Station.</p>
+ <p align="justify">•	Acoustic monitoring of machinery identifies sounds to determine whether machines need to be repaired or replaced. For example, in 2020 Bosch Research presented a device called <a href="https://www.bosch.com/stories/acoustic-sensors/">SoundSee</a> which monitors machines in the International Space Station.</p>
 
  <p align="justify">•	Everyday people record their lives and shared them in social media. In fact, over 82% of the consumer traffic on the Internet are videos according to CISCO [4]. The soundtrack contains all kinds of sounds that can be used to index and organize content. Microsoft began offering recognition of audience reaction sounds (e.g. laughing, clapping, booing) for the <a href="https://azure.microsoft.com/en-us/services/media-services/video-indexer/">Azure's Video Indexer</a>  tool in 2020. YouTube started in 2017 by adding captioning of three sounds to their videos [5].</p>
 
