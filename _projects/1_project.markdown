@@ -6,7 +6,7 @@ img: /assets/img/NELS_diagram.png
 importance: 1
 ---
 
-<p align="justify">Hearing machines that understand sounds like humans do require computational programs that can learn from years of accumulated diverse acoustics. They must use associated knowledge to guide subsequent learning and organize what they hear, learn names for recognizable events, scenes, objects, actions, materials, places, and retrieve sounds by reference to those names. These machines must also continuously improve their hearing competence to encompass all the diversity and scale of the acoustics in the world. Examples of applications are described in my blog post<a href="https://bmartin1.github.io/blog/2021/everyday-sounds/">Everyday, sounds occur around us</a>. The ultimate goals of hearing machines inspired my PhD project called Never-Ending Learner of Sounds (NELS) [1], which began in 2016.</p>
+<p align="justify">Hearing machines that understand sounds like humans do require computational programs that can learn from years of accumulated diverse acoustics. They must use associated knowledge to guide subsequent learning and organize what they hear, learn names for recognizable events, scenes, objects, actions, materials, places, and retrieve sounds by reference to those names. These machines must also continuously improve their hearing competence to encompass all the diversity and scale of the acoustics in the world. Examples of applications are described in my blog post:<a href="https://bmartin1.github.io/blog/2021/everyday-sounds/"> Everyday, sounds occur around us</a>. The ultimate goals of hearing machines inspired my PhD project called Never-Ending Learner of Sounds (NELS) [1,2], which began in 2016.</p>
 <br>
 
 <div class="row">
@@ -30,20 +30,22 @@ importance: 1
     A Never-Ending Learner of Sounds (NELS) to hear and understand the Web.
 </div>
 
-<p align="justify">Broadly speaking, NELS crawls audio from YouTube and indexes it with Sound Event Recognition. I chose YouTube because it’s the largest archive of sounds and it resembles the diverse acoustics of the world. The downloaded audio is segmented and passed to a SER system that,  depending on its posterior probabilities, will either discard the segment or index the segment with one of the pre-defined categories. The indexed segments are made available for search and retrieval through a website <i>nels.cs.cmu.edu</i>.</p>
+<p align="justify">Broadly speaking, NELS crawls audio from YouTube and indexes it with Sound Event Recognition. I chose YouTube because it’s the largest archive of sounds and it resembles the diverse acoustics of the world. The downloaded audio is segmented and passed to a SER system that, depending on its posterior probabilities, will either discard the segment or index the segment with one of the pre-defined categories. The indexed segments are made available for search and retrieval through a website <i>nels.cs.cmu.edu</i>.</p>
 
-<p align="justify">In the next project posts I will present research done in the different modules to advance the state of NELS. NELS is inspired by and aimed to emulate two similar and more mature projects at Carnegie Mellon University, the Never-ending Language learner led by Tom Mitchel and the Never-ending Image learner led by Abhinav Gupta [3]. Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors. </p>
+<p align="justify">In the next project posts I will present research done in the different modules to advance the state of NELS. NELS is inspired by and aimed to emulate two similar and more mature projects at Carnegie Mellon University, the Never-ending Language learner led by Tom Mitchel [3] and the Never-ending Image learner led by Abhinav Gupta [4]. Since its inception in 2016, NELS research has been reported in publications in top venues, has motivated multiple international collaborations, and has been awarded multiple honors. </p>
 
 <h3>References</h3>
 1. Elizalde, Benjamin Martinez. "Never-Ending Learning of Sounds." Diss. Carnegie Mellon University, 2020.
-2. Mitchell, Tom, et al. "Never-ending learning." Communications of the ACM 61.5 (2018): 103-115.
+2. Elizalde, Benjamin, Rohan Badlani, Ankit Shah, Anurag Kumar, and Bhiksha Raj. "Nels-never-ending learner of sounds." NIPS Workshop of Machine Learning for Audio, 2017.
+3. Mitchell, Tom, William Cohen, Estevam Hruschka, Partha Talukdar, Bishan Yang, Justin Betteridge, Andrew Carlson et al. "Never-ending learning." Communications of the ACM 61, no. 5 (2018): 103-115.
+4. Chen, Xinlei, Abhinav Shrivastava, and Abhinav Gupta. "Neil: Extracting visual knowledge from web data." Proceedings of the IEEE international conference on computer vision. 2013.
 
 <h3>Honors</h3>
 1. Won the 2017 Gandhian Young Technological Innovation Award (39/2915 winners).
 2. Finalist of the 2018 Qualcomm Innovation Fellowship Competition (30/174 finalists).
 3. Third place in 2018 IEEE DCASE’s Making Sense of Sounds Data Challenge (12 teams).
 4. Received financial support from Bosch Research in Pittsburgh 2019.
-4. Partially supported by funding from the Sense of Wonder Group, and CONACyT.
+4. Partially supported by the Sense of Wonder Group, and CONACyT.
 
 
 <!--
