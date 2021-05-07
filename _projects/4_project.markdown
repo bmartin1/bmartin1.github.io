@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 3 NELS
-description: NELS improves hearing with unlabeled audio.
+title: 4 NELS
+description: NELS allows searching indexed audio based on audio and text queries.
 img: /assets/img/NELS_semi.png
-importance: 3
+importance: 4
 ---
 
 <p align="justify">NELS can take advantage of the continuously crawled unlabeled Web audio to improve its recognition models using semi-supervised learning as described in our paper [1]. Semi-supervised learning in our setup can be summarized in the following steps. First, a sound recognition system is trained using audio with labeled sound events and then evaluated in a test set. The system is used to recognize known sounds on an often large unlabeled audio set. Using a selection of the newly labeled audio, the system is re-trained and evaluated again in the test set, most likely improving performance. The process is repeated until there is no performance improvement. Although there were a few papers exploring this topic with about 20,000 audio-only recordings, to the best of our knowledge our study published in 2017 was the first to explore it using audio from Web videos and with one order of magnitude more recordings.</p>
@@ -23,16 +23,6 @@ importance: 3
 <p align="justify"> All the audio was preprocessed, we tested two different Machine Learning classifiers, and tested three methods to select unlabeled audio for re-training. Audio was characterized with Bag-of-Audio-Words features built over Mel Frequency Cepstral Coefficients. The recognition models were binary classifiers based on Support Vector Machines and Neural Networks. We tested three methods to select candidates for re-training, classifier's output probability, classifier's output precision and clarity index. The classifier's output was a probability that can be interpreted as a confidence value, we chose a value greater or equal than 0.95. High precision means that the classifier recognizes relevant instances of the class, we chose a precision threshold greater or equal than 0.95. Clarity Index identifies samples that are close to the decision boundary of the classifier and hence teaching the classifiers the hardest audio clips. </p>
 
 <p align="justify">We evaluated Sound Event Classification using average precision as a metric. The baseline performance was computed using our classifiers on the labeled testing set without any re-training. At each iteration, we ran the classifiers on the 200,000 unlabeled segments to select candidates for re-training for all the 10 classes. Once the classifiers were re-trained we computed average precision and compared it with the baseline. The process was repeated in an iterative manner until the metric converged. We carried on three independent re-training experiments, one for each candidate selection method.</p>
-<br>
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/NELS_semi_examples.png' | relative_url }}" alt="" title="example image"/>
-    </div>
-</div>
-<div class="caption">
-    Clapping sounds from a crowd are rather dissimilar to single clapping, and more acoustically similar to sounds like rain falling. Sound event datasets with the class clapping don't make a distinction between both types of clapping sounds.
-</div>
 
 <p align="justify">The overall performance after re-training did not improve dramatically, we achieved 1.4% average precision overall the sound events after five iterations based on Clarity Index selection. We found an interesting insight to explain the learning plateau. The notion of classes in audio can be inconsistent, and so any semi-supervised method may have a ceiling because an audio clip can be categorized into multiple acoustically similar, but semantically different categories, confounding the training of the classifier. For example, "gunshot" was often re-trained with audio corresponding to objects banging. Another example in later experiments was with "clapping", which mostly included audio of crowd clapping. The performance of the "clapping" recognizer was improving using crawled audio. However, few of the crawled recordings labeled as "clapping" were used for retraining, after a close inspection, these recordings had the sound of a single clap. The crawled audio that was used for retraining corresponded to the sound of "rain (falling)", which was acoustically similar to crowd clapping. The problem is that we do not know a priori which classes will have this issue. <b>Therefore, should we re-train classifiers based on acoustic similarity only or based on both acoustic and semantic similarity?</b>
 </p>
