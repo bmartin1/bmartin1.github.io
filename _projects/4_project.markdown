@@ -1,28 +1,35 @@
----
+d---
 layout: page
 title: 4 NELS
-description: NELS allows searching indexed audio based on audio and text queries.
+description: NELS allows searching indexed audio using audio or text queries.
 img: /assets/img/NELS_semi.png
 importance: 4
 ---
 
-<p align="justify">NELS can take advantage of the continuously crawled unlabeled Web audio to improve its recognition models using semi-supervised learning as described in our paper [1]. Semi-supervised learning in our setup can be summarized in the following steps. First, a sound recognition system is trained using audio with labeled sound events and then evaluated in a test set. The system is used to recognize known sounds on an often large unlabeled audio set. Using a selection of the newly labeled audio, the system is re-trained and evaluated again in the test set, most likely improving performance. The process is repeated until there is no performance improvement. Although there were a few papers exploring this topic with about 20,000 audio-only recordings, to the best of our knowledge our study published in 2017 was the first to explore it using audio from Web videos and with one order of magnitude more recordings.</p>
+<p align="justify">NELS crawls audio from YouTube and indexes it with Sound Event Recognition. The indexed audio content is made available for search and retrieval through a website. NELS takes a text query and used linguistic similarity to compare against the class labels of the indexed audio content. We also studied audio queries and acoustic similarity for retrieval [1,2,3]. The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity of acoustic semantics. For example, we may query using the text “car brakes” and the most similar text in our database could be “car engine”, however the acoustics are very different. On the other hand, we might query with an audio recording containing a low-frequency rumble sound, and the most similar audio in our database could be from the class “heart murmur", however the original sound was "engine", which is totally different in linguistic semantics.</p>
 <br>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/NELS_semi.png' | relative_url }}" alt="" title="example image"/>
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/NELS_cross.png' | relative_url }}" alt="" title="example image"/>
     </div>
 </div>
 <div class="caption">
-    We applied semi-supervised learning to improve Sound Event Recognition performance using unlabeled Web audio.
+The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity of acoustic semantics.
 </div>
 
-<p align="justify">For our experiments we used a standard labeled sound event dataset and unlabeled audio crawled from YouTube. The dataset was Urban Sounds with 10 classes: "air conditioner", "car horn", "children playing", "dog barking", and "street music", "gunshot", "drilling", "engine idling", "siren", "jackhammer". The dataset has 8,732 audio segments of 3.5 sec average duration. The unlabeled audio were crawled YouTube videos corresponding to the 10 classes. The query was a combination of keywords: "sound event label" + "sound", for example, for the class label "air conditioner", the query was "air conditioner sound". We segmented the downloaded videos into 200,000 segments of 3.5 sec. Although the video's soundtrack tend to have the target sound event, it was not always occurring and even if it was, sometimes it was present within a short duration, and sometimes the target sound was occluded by background noise, overlapping sounds, and channel effects.</p>
+<p align="justify">My paper [4] introduced a cross-modal search and retrieval framework to create a joint representation that retains the same patterns of semantic closeness for both, audio and text. The same representation regardless of whether we give the model the word “car brakes”, or an acoustic example of a "car brakes". This is enabled by a shared latent space that combines lexical similarity with acoustic similarity. The shared space is learned in a data-driven way via a siamese neural network. </p>
 
-<p align="justify"> All the audio was preprocessed, we tested two different Machine Learning classifiers, and tested three methods to select unlabeled audio for re-training. Audio was characterized with Bag-of-Audio-Words features built over Mel Frequency Cepstral Coefficients. The recognition models were binary classifiers based on Support Vector Machines and Neural Networks. We tested three methods to select candidates for re-training, classifier's output probability, classifier's output precision and clarity index. The classifier's output was a probability that can be interpreted as a confidence value, we chose a value greater or equal than 0.95. High precision means that the classifier recognizes relevant instances of the class, we chose a precision threshold greater or equal than 0.95. Clarity Index identifies samples that are close to the decision boundary of the classifier and hence teaching the classifiers the hardest audio clips. </p>
+<p align="justify">The siamese network consists of twin networks, each takes an input vector of any one modality --audio or text. For training, the network takes pairs that come from the same class or different classes, and then computes a similarity metric for each pair. This metric is utilized by a contrastive loss function to enforce constraints that cause similar pairs to come together and different pairs to go apart. The trained siamese network is used to extract the joint representations for either an audio or a text input query.</p>
 
-<p align="justify">We evaluated Sound Event Classification using average precision as a metric. The baseline performance was computed using our classifiers on the labeled testing set without any re-training. At each iteration, we ran the classifiers on the 200,000 unlabeled segments to select candidates for re-training for all the 10 classes. Once the classifiers were re-trained we computed average precision and compared it with the baseline. The process was repeated in an iterative manner until the metric converged. We carried on three independent re-training experiments, one for each candidate selection method.</p>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/NELS_crossdiagram.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    The framework enables cross-modal search and direct comparison of audio and text modalities for retrieval. The shared latent space combines lexical similarity with acoustic similarity.
+</div>
 
 <p align="justify">The overall performance after re-training did not improve dramatically, we achieved 1.4% average precision overall the sound events after five iterations based on Clarity Index selection. We found an interesting insight to explain the learning plateau. The notion of classes in audio can be inconsistent, and so any semi-supervised method may have a ceiling because an audio clip can be categorized into multiple acoustically similar, but semantically different categories, confounding the training of the classifier. For example, "gunshot" was often re-trained with audio corresponding to objects banging. Another example in later experiments was with "clapping", which mostly included audio of crowd clapping. The performance of the "clapping" recognizer was improving using crawled audio. However, few of the crawled recordings labeled as "clapping" were used for retraining, after a close inspection, these recordings had the sound of a single clap. The crawled audio that was used for retraining corresponded to the sound of "rain (falling)", which was acoustically similar to crowd clapping. The problem is that we do not know a priori which classes will have this issue. <b>Therefore, should we re-train classifiers based on acoustic similarity only or based on both acoustic and semantic similarity?</b>
 </p>
