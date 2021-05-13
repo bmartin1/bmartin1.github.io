@@ -1,8 +1,8 @@
-d---
+---
 layout: page
 title: 4 NELS
 description: NELS allows searching indexed audio using audio or text queries.
-img: /assets/img/NELS_semi.png
+img: /assets/img/NELS_crossdiagram.png
 importance: 4
 ---
 
@@ -18,9 +18,7 @@ importance: 4
 The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity of acoustic semantics.
 </div>
 
-<p align="justify">My paper [4] introduced a cross-modal search and retrieval framework to create a joint representation that retains the same patterns of semantic closeness for both, audio and text. The same representation regardless of whether we give the model the word “car brakes”, or an acoustic example of a "car brakes". This is enabled by a shared latent space that combines lexical similarity with acoustic similarity. The shared space is learned in a data-driven way via a siamese neural network. </p>
-
-<p align="justify">The siamese network consists of twin networks, each takes an input vector of any one modality --audio or text. For training, the network takes pairs that come from the same class or different classes, and then computes a similarity metric for each pair. This metric is utilized by a contrastive loss function to enforce constraints that cause similar pairs to come together and different pairs to go apart. The trained siamese network is used to extract the joint representations for either an audio or a text input query.</p>
+<p align="justify">In 2018, my paper [4] introduced a cross-modal search and retrieval framework to create a joint representation that retains the same patterns of semantic closeness for both, audio and text. The same representation regardless of whether we give the model the word “car brakes”, or an acoustic example of a "car brakes". This is enabled by a shared latent space that combines lexical similarity with acoustic similarity. The shared space is learned in a data-driven way via a siamese neural network. </p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -31,11 +29,27 @@ The problem with simply linking language to acoustics is that similarity in lang
     The framework enables cross-modal search and direct comparison of audio and text modalities for retrieval. The shared latent space combines lexical similarity with acoustic similarity.
 </div>
 
-<p align="justify">The overall performance after re-training did not improve dramatically, we achieved 1.4% average precision overall the sound events after five iterations based on Clarity Index selection. We found an interesting insight to explain the learning plateau. The notion of classes in audio can be inconsistent, and so any semi-supervised method may have a ceiling because an audio clip can be categorized into multiple acoustically similar, but semantically different categories, confounding the training of the classifier. For example, "gunshot" was often re-trained with audio corresponding to objects banging. Another example in later experiments was with "clapping", which mostly included audio of crowd clapping. The performance of the "clapping" recognizer was improving using crawled audio. However, few of the crawled recordings labeled as "clapping" were used for retraining, after a close inspection, these recordings had the sound of a single clap. The crawled audio that was used for retraining corresponded to the sound of "rain (falling)", which was acoustically similar to crowd clapping. The problem is that we do not know a priori which classes will have this issue. <b>Therefore, should we re-train classifiers based on acoustic similarity only or based on both acoustic and semantic similarity?</b>
+<p align="justify">The siamese network consists of twin networks, each takes an input vector of any one modality --audio or text. For training, the network takes pairs that come from the same class or different classes, and then computes a similarity metric for each pair. This metric is utilized by a contrastive loss function to enforce constraints that cause similar pairs to come together and different pairs to go apart. The trained siamese network is used to extract the joint representations for either an audio or a text input query.</p>
+
+<p align="justify"> We carried two types of retrieval experiments, one with and one without joint embeddings. We used a sound event dataset with 11,000 audio files from 41 classes. The training set represented the database and the test set the query set. Audio or text were first used to extract embeddings from the pre-trained networks. Then, they were processed in two ways: (1) direct retrieval to compute the baseline, and (2) used to compute joint embeddings with the trained Siamese Network, followed by retrieval. Retrieval performance is measured in terms of MAP@3, which is the mean of average precision scores and measures whether any of the top 3 retrieved results corresponds to the query and if so in what position.</p>
+
+<p align="justify">We first demonstrated that (1) direct retrieval is insufficient for cross-modal retrieval and that (2) using joint embeddings allows cross-modal retrieval with performance comparable to single-modality retrieval. Cross-modal retieval with opposite feature types yielded a random performance of 2.4% MAP@3, but with joint embeddings we obtained 71.3% MAP@3.
 </p>
 
+<p align="justify">We compared single-modal vs cross-modal retrieval results to show the.... We considered the text label "gunshot", computed text features, compared them against text features of the other 40 classes using cosine similarity, and retrieved the following top four labels: "gunshot", "tearing", "applause", "cough". Next, we extracted joint embeddings of "gunshot", compared them against the joint embeddings created from audio queries using cosine lexico-acoustic similarity , and retrieved audio corresponding to the following four labels: ``fireworks", ``gunshot", ``microwave oven", ``knock". Another example was ``meow", which retrieved with text similarity: ``meow", ``fart", ``cough" and with lexico-acoustic similarity: ``meow", ``bark", ``trumpet". From these results, the main conclusion is that although both approaches predicted the correct class, they retrieved different results, which suggests that the shared space includes knowledge that combines both modalities.</p>
+
+<p align="justify">Our framework allows the use of OOV class labels for querying. For example, we considered the query ``house", which is not part of the training data and which has a more abstract meaning than any label in the training data. With text and lexico-acoustic similarity, the top five retrieved items were: ``drawer", ``telephone", ``writing", ``gunshot", ``double bass" and ``meow", ``cough", ``finger snapping", ``laughter", ``computer keyboard", respectively. It is interesting to note that both results are arguably relevant, but are not the same.
+
+Another example of audio query was ``orchestra", which retrieved ``applause", ``cello", ``acoustic guitar", ``flute", ``fireworks", ``violin", ``clarinet" and ``violin", ``trumpet", ``saxophone", ``flute", ``double bass", ``clarinet", ``cello" with acoustic and lexico-acoustic similarities, respectively.</p>
+
+<h3>Video</h3>
+This project was developed during my 2018 internship at Microsoft Research in the Audio and Acoustics Group, and a video of my presentation is in the following <a href="https://www.microsoft.com/en-us/research/video/a-cross-modal-audio-search-engine-based-on-joint-audio-text-embeddings/">link</a>.
+
 <h3>References</h3>
-1. Elizalde, Benjamin, Ankit Shah, Siddharth Dalmia, Min Hun Lee, Rohan Badlani, Anurag Kumar, Bhiksha Raj, and Ian Lane. "An approach for self-training audio event detectors using web data." In 2017 25th European Signal Processing Conference (EUSIPCO). IEEE, 2017.
+1. Manocha, Pranay, Rohan Badlani, Anurag Kumar, Ankit Shah, Benjamin Elizalde, and Bhiksha Raj. "Content-based representations of audio using siamese neural networks." In 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 3136-3140. IEEE, 2018.
+2. Fan, Jianyu, Eric Nichols, Daniel Tompkins, Ana Elisa Méndez Méndez, Benjamin Elizalde, and Philippe Pasquier. "Multi-Label Sound Event Retrieval Using A Deep Learning-Based Siamese Structure With A Pairwise Presence Matrix." In ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 3482-3486. IEEE, 2020.
+3. Elizalde, Benjamin, Ankit Shah, Siddharth Dalmia, Min Hun Lee, Rohan Badlani, Anurag Kumar, Bhiksha Raj, and Ian Lane. "An approach for self-training audio event detectors using web data." In 2017 25th European Signal Processing Conference (EUSIPCO). IEEE, 2017.
+
 
 
 
