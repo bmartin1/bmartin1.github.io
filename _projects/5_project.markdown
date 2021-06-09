@@ -1,0 +1,124 @@
+---
+layout: page
+title: 5 NELS
+description: NELS limitations categorizing and describing sounds.
+img: /assets/img/lim_airplane.jpg
+importance: 5
+---
+
+<p align="justify">Building Machine Learning models for the NELS modules exposed that current categorization limits performance and quality of expression of acoustic phenomena. We summarized the limitations in three main aspects. First, categorization of sounds is highly subjective and can be lexico-acoustically inconsistent, affecting crawling quality and performance of Machine Learning models. Second, expressiveness of acoustic phenomena in search and retrieval is limited to one or two words, but we should enable elaborated descriptions. Third, to learn knowledge about sounds and new sounds we need to define names and relationships for acoustic phenomena beyond sound-sources (nouns). From the perspective of NELS, quality of expression is fundamentally a question of human interpretation. </p>
+<br>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/lim_airplane.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>    
+<div class="caption">
+    Think about the most typical sound produced by the source-object in each image. Are they all acoustically similar? What would be the sound class that you would give to each or all of them?    
+</div>
+
+<p align="justify"><b>Categories based on source-objects often assume that they can produce only one prototypical sound, limiting recognition performance of Machine Learning models.</b> For example, think about the most typical sound produced by a helicopter and an airplane. Now, look at the helicopter and airplane images above, and think again what is the typical sound that each of them would produce. Each airplane has a different engine, but did you think that both airplanes would produce the same sound? How would you categorize the sound? Would you group both sounds under the same category, or even more, would you group the sound associated to the three images into the same category, what would be the name? NELS audio indexing evidenced this issue with one of its classifiers trained in a well-studied sound event dataset called ESC-50 (and AudioSet), where several classes are defined by their sound-source. The author of the dataset carried on human classification experiments and showed that "airplane" was the lowest performing category with 60% accuracy, highly confused with "helicopter". The dataset contains several audio recordings with an airplane that has a rotating engine, which is acoustically similar to the rotating engine of the helicopter. Unsurprisingly, the state of the art for Sound Event Recognition systems have the same problem and perform similarly. Thus, the question is, can we train a model to achieve 100% accuracy in ESC-50?</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/lim_knowledge.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>    
+<div class="caption">
+    NELS should account for different possible relations and interactions between the sounds by providing different concurrent categorization strategies.    
+</div>
+
+<p align="justify"><b>To learn knowledge about sounds, we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have the three objects illustrated above, a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sound do they produce in combination? NELS should account for different possible names, relations and similarities between the sounds by providing different concurrent categorization strategies. But, What names, attributes and relations should we define? The method we choose to organize sounds will have an effect on the performance of Machine Learning models.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/lim_semantics_DCASE.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>    
+<div class="caption">
+    Confusion happens between the coarse-level classes ``effects" and ``urban". The fine-level categories shared a semantic meaning, but did not share acoustic similarity. The acoustic similarity was shared across the coarse-level classes.
+</div>
+
+<p align="justify"> <b>Organization of categories based on semantics is highly subjective and have many alternatives, affecting the performance of Machine Learning algorithms.</b> In the 2018 DCASE Making Sense of Sound Challenge, the goal was to perform classification of coarse-level categories using audio from fine-level categories. The figure above shows on the right the confusion matrix of the accumulated coarse-level classification scores of the 12 participating teams. One big confusion happened between the coarse-level classes "effects" and "urban". Their corresponding fine-level categories shared the semantic meaning, but did not always shared acoustic similarity. In the left of the Figure, we show "urban" and "effects" with the corresponding fine-level classes "clock alarm" and "alarm", or "clock tick" and "click", or "airplane" and "whooshing". Clearly, each pair have similar acoustics even though they were on different classes. One could argue that instead, we could have grouped together both alarms, and airplane and whooshing into another group.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/lim_search.png' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>    
+<div class="caption">
+    In order to visually identify the first image, which of the two descriptions is sufficient? Either, a cat is on a bicycle, or a yellow animal with two pointy ears and two round eyes on a red object with wheels. Now, look at the second image, in order to acoustically identify the depicted event, which of the two descriptions is sufficient? Either a malfunctioning escalator, or a repeated low-frequency scraping and rubber band snapping..   
+</div>
+
+<p align="justify"><b>Search of acoustic phenomena was limited to one or two words, but we often require multiple descriptive terms to describe acoustic phenomena.</b> We exemplify this need in the figure above. In order to visually identify the first image, which of the two descriptions is sufficient? Either, a cat is on a bicycle, or a yellow animal with two pointy ears and two round eyes on a red object with wheels. The first one is probably enough. Now, look at the second image, in order to acoustically identify the depicted event, which of the two descriptions is sufficient? Either a malfunctioning escalator, or a repeated low-frequency scraping and rubber band snapping. The second option provides us with an acoustic definition, and a repairman will rely on it in order to know if the stairs need urgent maintenance.</p>
+
+<p align="justify"> <b>Authors [1] mentioned that users of automatic systems, for recognition and retrieval, usually complain about not experiencing proper or sufficient categories.</b> An explanation is because there are many possible categorization processes, and the most appropriate categorization depends on the sound, the user, and the context. So, often we need multiple terms to elaborate a description. Elaborated descriptions are essential for search and retrieval of acoustic phenomena, especially when they could not identify the source [2]. The future of such systems lies therefore in accounting for different possible similarities between the sounds, thus being capable of providing different concurrent categorization strategies. Therefore, we need to be able to train Machine Learning models not only on classes defined by source-objects and scenes, but also based on other category types such as sequences, actions, materials, shapes, sizes, cities, attributes and sentiments.</p>
+
+<p align="justify">Even if we increase the category types, we still have limited lexicalized terms in language to describe acoustic phenomena. This is a particular instance of the Sapir Whorf hypothesis, where the structure of a language determines a listener's perception and expressiveness of a perceived sound. For example, the sound of water is one of the most distinguishable sounds, but how to describe it without using the word water? <b>Clearly, we have limitations in language to describe acoustic phenomen, nonetheless, we should still be able to automatically describe and express the acoustic content of a signal at least as good as humans do.</b> </p>
+
+<h3>References</h3>
+1. Lemaitre, Guillaume, Olivier Houix, Nicolas Misdariis, and Patrick Susini. "Listener expertise and sound identification influence the categorization of environmental sounds." Journal of Experimental Psychology: Applied 16, no. 1 (2010): 16.
+2. VanDerveer, Nancy Jean. Ecological acoustics: Human perception of environmental sounds. Cornell University, 1979.
+
+
+
+
+<!--
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/1.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/3.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/5.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+You can also put regular text between your rows of images.
+Say you wanted to write a little bit about your project before you posted the rest of the images.
+You describe how you toiled, sweated, *bled* for your project, and then... you reveal it's glory in the next row of images.
+
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+<div class="caption">
+    You can also have artistically styled 2/3 + 1/3 images, like these.
+</div>
+
+
+The code is simple.
+Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/" target="_blank">Bootstrap Grid</a> system).
+To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
+Here's the code for the last row of images above:
+
+```html
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/6.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/11.jpg' | relative_url }}" alt="" title="example image"/>
+    </div>
+</div>
+```
+-->
