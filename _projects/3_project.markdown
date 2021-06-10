@@ -40,7 +40,7 @@ importance: 3
 <h3>References</h3>
 1. Elizalde, Benjamin, Ankit Shah, Siddharth Dalmia, Min Hun Lee, Rohan Badlani, Anurag Kumar, Bhiksha Raj, and Ian Lane. "An approach for self-training audio event detectors using web data." In 2017 25th European Signal Processing Conference (EUSIPCO). IEEE, 2017.
 
-
+Date: Published on Mar 2021 from work done during my PhD between 2015-2020.
 
 <!--
 <div class="row">

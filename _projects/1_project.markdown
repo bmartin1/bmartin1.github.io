@@ -47,6 +47,7 @@ importance: 1
 4. Received financial support from Bosch Research in Pittsburgh 2019.
 4. Partially supported by the Sense of Wonder Group, and CONACyT.
 
+Date: Published on Jan 2021 from work done during my PhD between 2015-2020.
 
 <!--
 <div class="row">

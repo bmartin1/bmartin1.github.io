@@ -45,7 +45,7 @@ This project was developed during my 2018 internship at Microsoft Research in th
 2. Fan, Jianyu, Eric Nichols, Daniel Tompkins, Ana Elisa Méndez Méndez, Benjamin Elizalde, and Philippe Pasquier. "Multi-Label Sound Event Retrieval Using A Deep Learning-Based Siamese Structure With A Pairwise Presence Matrix." In ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 3482-3486. IEEE, 2020.
 3. Elizalde, Benjamin, Shuayb Zarar, and Bhiksha Raj. "Cross modal audio search and retrieval with joint embeddings based on text and audio." In ICASSP 2019-2019 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 4095-4099. IEEE, 2019.
 
-
+Date: Published on Abr 2021 from work done during my PhD between 2015-2020.
 
 
 <!--

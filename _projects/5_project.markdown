@@ -61,7 +61,7 @@ importance: 5
 1. Lemaitre, Guillaume, Olivier Houix, Nicolas Misdariis, and Patrick Susini. "Listener expertise and sound identification influence the categorization of environmental sounds." Journal of Experimental Psychology: Applied 16, no. 1 (2010): 16.
 2. VanDerveer, Nancy Jean. Ecological acoustics: Human perception of environmental sounds. Cornell University, 1979.
 
-
+Date: Published on May 2021 from work done during my PhD between 2015-2020.
 
 
 <!--

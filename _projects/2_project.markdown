@@ -43,7 +43,9 @@ Three more tasks, unrelated to Web audio, were organized by the audio group at T
 1. Mesaros, Annamaria, Toni Heittola, Aleksandr Diment, Benjamin Elizalde, Ankit Shah, Emmanuel Vincent, Bhiksha Raj, and Tuomas Virtanen. "DCASE 2017 challenge setup: Tasks, datasets and baseline system." DCASE 2017-Workshop on Detection and Classification of Acoustic Scenes and Events. 2017.
 <br>
 2. Mesaros, Annamaria, Aleksandr Diment, Benjamin Elizalde, Toni Heittola, Emmanuel Vincent, Bhiksha Raj, and Tuomas Virtanen. "Sound event detection in the DCASE 2017 challenge." IEEE/ACM Transactions on Audio, Speech, and Language Processing 27.6 (2019): 992-1006.
-
+<br>
+<br>
+Date: Published on Feb 2021 from work done during my PhD between 2015-2020.
 
 <!--
 <div class="row">
