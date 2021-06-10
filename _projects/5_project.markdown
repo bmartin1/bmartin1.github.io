@@ -6,8 +6,7 @@ img: /assets/img/lim_airplane.jpg
 importance: 5
 ---
 
-<p align="justify">Building Machine Learning models for the NELS modules exposed that current categorization limits performance and quality of expression of acoustic phenomena. We summarized the limitations in three main aspects. First, categorization of sounds is highly subjective and can be lexico-acoustically inconsistent, affecting crawling quality and performance of Machine Learning models. Second, expressiveness of acoustic phenomena in search and retrieval is limited to one or two words, but we should enable elaborated descriptions. Third, to learn knowledge about sounds and new sounds we need to define names and relationships for acoustic phenomena beyond sound-sources (nouns). From the perspective of NELS, quality of expression is fundamentally a question of human interpretation. </p>
-<br>
+<p align="justify">Building Machine Learning models for the NELS modules exposed that current categorization limits performance and quality of expression of acoustic phenomena. More importantly, if we are to learn new classes automatically we need to know how to define them and labeled them. We summarized the limitations in three main aspects. First, categorization of sounds is highly subjective and can be lexico-acoustically inconsistent, affecting crawling quality and performance of Machine Learning models. Second, how we name sounds in search and retrieval is limited to one or two words, but we should enable elaborated descriptions. Third, to learn knowledge about existing and new sounds we need to define names and relationships for acoustic phenomena beyond sound-sources (nouns). From the perspective of NELS, quality of expression is fundamentally a question of human interpretation. </p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
