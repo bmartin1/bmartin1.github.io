@@ -45,7 +45,7 @@ importance: 1
 2. Finalist of the 2018 Qualcomm Innovation Fellowship Competition (30/174 finalists).
 3. Third place in 2018 IEEE DCASE’s Making Sense of Sounds Data Challenge (12 teams).
 4. Received financial support from Bosch Research in Pittsburgh 2019.
-4. Partially supported by the Sense of Wonder Group, and CONACyT.
+4. Received financial support from the Sense of Wonder Group, and CONACyT.
 
 Date: Published on Jan 2021 from work done during my PhD between 2015-2020.
 
