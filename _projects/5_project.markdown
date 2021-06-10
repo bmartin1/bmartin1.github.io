@@ -26,7 +26,7 @@ importance: 5
     </div>
 </div>    
 <div class="caption">
-    NELS should account for different possible relations and interactions between the sounds by providing different concurrent categorization strategies.    
+    NELS should account for different possible attributes, relations and interactions between the objects by providing different concurrent categorization strategies.    
 </div>
 
 <p align="justify"><b>To learn knowledge about sounds, we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have the three objects illustrated above, a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sound do they produce in combination? NELS should account for different possible names, relations and similarities between the sounds by providing different concurrent categorization strategies. But, What names, attributes and relations should we define? The method we choose to organize sounds will have an effect on the performance of Machine Learning models.</p>
