@@ -26,10 +26,11 @@ importance: 5
     </div>
 </div>    
 <div class="caption">
-    NELS should account for different possible attributes, relations and interactions between the objects by providing different concurrent categorization strategies.    
+    If we have the above three objects a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sound do they produce in combination?
+
 </div>
 
-<p align="justify"><b>To learn knowledge about sounds, we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have the three objects illustrated above, a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sound do they produce in combination? NELS should account for different possible names, relations and similarities between the sounds by providing different concurrent categorization strategies. But, What names, attributes and relations should we define? The method we choose to organize sounds will have an effect on the performance of Machine Learning models.</p>
+<p align="justify"><b>To learn knowledge about sounds, we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have the three objects illustrated above, a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sound do they produce in combination? NELS should account for different possible names, relations and similarities between the sounds by providing different concurrent categorization strategies. But, what attributes, relations and interactions should we define? The method we choose to organize sounds will have an effect on the performance of Machine Learning models.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -37,7 +38,7 @@ importance: 5
     </div>
 </div>    
 <div class="caption">
-    Confusion happens between the coarse-level classes ``effects" and ``urban". The fine-level categories shared a semantic meaning, but did not share acoustic similarity. The acoustic similarity was shared across the coarse-level classes.
+    Confusion happens between the coarse-level classes "effects" and "urban". The fine-level categories shared a semantic meaning, but did not share acoustic similarity. The acoustic similarity was shared across the coarse-level classes.
 </div>
 
 <p align="justify"> <b>Organization of categories based on semantics is highly subjective and have many alternatives, affecting the performance of Machine Learning algorithms.</b> In the 2018 DCASE Making Sense of Sound Challenge, the goal was to perform classification of coarse-level categories using audio from fine-level categories. The figure above shows on the right the confusion matrix of the accumulated coarse-level classification scores of the 12 participating teams. One big confusion happened between the coarse-level classes "effects" and "urban". Their corresponding fine-level categories shared the semantic meaning, but did not always shared acoustic similarity. In the left of the Figure, we show "urban" and "effects" with the corresponding fine-level classes "clock alarm" and "alarm", or "clock tick" and "click", or "airplane" and "whooshing". Clearly, each pair have similar acoustics even though they were on different classes. One could argue that instead, we could have grouped together both alarms, and airplane and whooshing into another group.</p>
