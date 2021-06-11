@@ -17,6 +17,7 @@ importance: 6
     If we have the above three objects a sponge, a plate and a faucet, what sound do each of them produce in isolation and what sounds do they produce in combination?   
 </div>
 
+<center>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/dishwashing.jpg' | relative_url }}" alt="" title="example image"/>
@@ -25,6 +26,7 @@ importance: 6
 <div class="caption">
     NELS should account for different possible attributes, relations and interactions between the objects by providing different concurrent categorization strategies.    
 </div>
+</center>
 
 <p align="justify"><b>Understanding how humans hear is the primary strategy in designing acoustic intelligence [1]</b>. In the previous <a href="https://bmartin1.github.io/projects/5_project/"> project post #5</a> I talked about the example in the figures above, and how we need to define different attributes, relations and interactions between the objects. From the perspective of NELS, categorization and search, is fundamentally a question of human interpretation -- how do people refer to acoustic phenomena and what do people find to be meaningfully similar? The way that people name and refer to sounds is unbounded and signal level similarity can be measured in many ways, at the end of the day these are tasks inherently subjective. Hence, we need to investigate human perception of sounds from the perspective of Psychology. </p>
 
