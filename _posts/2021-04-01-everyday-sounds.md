@@ -35,7 +35,7 @@ Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxide
     </div>
 </div>
 <div class="caption">
-    The acoustic scene of a kitchen is composed by sounds that carry a meaning and allow inhabitants to react accordingly. For example, the sound of the espresso pot whistling indicates that the coffee is ready!
+    The acoustic scene of a kitchen is composed by sounds that carry a meaning and allow inhabitants to react accordingly. For example, the sound of the espresso pot whistling indicates that coffee is ready!
 </div>
 
 
