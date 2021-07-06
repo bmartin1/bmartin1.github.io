@@ -17,3 +17,5 @@ social: true  # includes social icons at the bottom of the page Put your address
 <p align="justify">I joined Microsoft in January 2021 :smile:. Before I received a Ph.D. from Carnegie Mellon University specializing in Machine Learning for Audio Signal Processing, supervised by Prof. Bhiksha Raj and Prof. Ian Lane. Previously, I worked as a Staff Researcher at ICSI - UC Berkeley in the Audio & Multimedia Lab. I received my masters and undergrad degrees from ITESM.</p>
 
 My research focuses on Acoustic Intelligence, Audio Analytics and Sound Understanding.
+
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=Mn2mw_N1T1fYJBMUlLfzLKI2QIDdhXng-gLohoarHKA&cl=ffffff&w=a"></script>
