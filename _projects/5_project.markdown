@@ -29,7 +29,7 @@ importance: 5
 
 </div>
 
-<p align="justify"><b>To learn knowledge about sounds we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have a sponge, a plate and a faucet, what sound(s) do each of them produce in isolation and what sound(s) do they produce in combination? NELS should provide different concurrent categorization strategies to account for different knowledge elements of sounds, but which ones should we define? The knowledge we consider and the methods to relate it will have an effect on the performance of Machine Learning models.</p>
+<p align="justify"><b>To learn knowledge about sounds we need to define recognizable names, attributes, relations, and interactions that produce acoustic phenomena.</b> For example, if we have a sponge, a plate and a faucet, what sound(s) do each of them produce in isolation and what sound(s) do they produce in combination? NELS should eventually be able to have and grow a knowledge base of sounds, something that until this day is not available, but how to start? We could use language to relate elements that compose sound events (e.g., WordnNet), or autoregressive models to generate acoustic descriptions of sound events (e.g., GPT3), however, language-based model seem to lack audio understanding and not always associate words that produce sounds (e.g. sitting in a chair vs pulling a chair, looking at a tree vs tree falling down). The knowledge we define and how we use it will impact the performance of Machine Learning models.</p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
