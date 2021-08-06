@@ -49,7 +49,7 @@ importance: 6
 
 <p align="justify">To exemplify the three main areas we use the sounds of a dish washing event illustrated in the figure above. Let's say we are in our house, close to the kitchen, but without the visuals of the kitchen. We can recognize the materials involved-- water, glass, metal, and the action of scrubbing (Psychomechanics). We can tell if the sounds were loud or quiet, and if the water was flowing continuously or intermittently (Psychoacoustics). From the context and our experience we can infer the event of someone washing something (Cognition). The listener's perceive, organize, and combine all these acoustic properties in a holistic manner to guess a dish washing event. </p>
 
-<p align="justify">We aimed to develop a similar approach for NELS, where we can combine Machine Learning models built on properties for sound event recognition and sound description. <b>The future of systems with Sound Understanding lie in accounting for different possible relations and similarities between sounds, thus being capable of providing models with different concurrent categorization strategies.</b></p>
+<p align="justify">We aimed to develop a similar approach for NELS, where we can combine Machine Learning models built on properties for sound event recognition and sound description. <b>The future of systems with Sound Understanding lies in accounting for different possible relations and similarities between sounds, thus being capable of providing models with different concurrent categorization strategies.</b></p>
 
 
 <h3>References</h3>
