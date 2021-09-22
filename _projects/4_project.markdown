@@ -6,7 +6,7 @@ img: /assets/img/NELS_crossdiagram.png
 importance: 4
 ---
 
-<p align="justify">NELS crawls audio from YouTube and indexes it with Sound Event Recognition. The indexed audio content is made available for search and retrieval through a website. NELS takes a text query and used linguistic similarity to compare against the class labels of the indexed audio content. We also studied audio queries and acoustic similarity for retrieval [1,2]. The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity of acoustic semantics. For example, we may query using the text “car brakes” and the most similar text in our database could be “car engine”, however the acoustics are very different. On the other hand, we might query with an audio recording containing a low-frequency rumble sound, and the most similar audio in our database could be from the class “heart murmur", however the original sound was "engine", which is totally different in linguistic semantics.</p>
+<p align="justify">NELS crawls audio from YouTube and indexes it with Sound Event Recognition. The indexed audio content is made available for search and retrieval through a website. NELS takes a text query and used linguistic similarity to compare against the class labels of the indexed audio content. We also studied audio queries and acoustic similarity for retrieval [1,2]. <b>The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity in acoustic semantics </b>. For example, we may query using the text “car brakes” and the most similar text in our database could be “car engine”, however the acoustics are very different. On the other hand, we might query with an audio recording containing a low-frequency rumble sound, and the most similar audio in our database could be from the class “heart murmur", however the original sound was "engine", which is totally different in linguistic semantics.</p>
 <br>
 
 <div class="row">
@@ -15,10 +15,10 @@ importance: 4
     </div>
 </div>
 <div class="caption">
-The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity of acoustic semantics.
+The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity in acoustic semantics.
 </div>
 
-<p align="justify">In 2018, my paper [3] introduced a cross-modal search and retrieval framework to create a joint representation that retains the same patterns of semantic closeness for both, audio and text. The same representation regardless of whether we give the model the word “car brakes”, or an acoustic example of a "car brakes". This is enabled by a shared latent space that combines lexical similarity with acoustic similarity. The shared space is learned in a data-driven way via a twin neural network. </p>
+<p align="justify">In 2018, my paper [3] introduced a cross-modal search and retrieval framework to create a joint representation that retains the same patterns of semantic closeness for both, audio and text. The same representation regardless of whether we give the model the word “car brakes”, or an acoustic example of "car brakes". This is enabled by a shared latent space that combines lexical similarity with acoustic similarity. The shared space is learned in a data-driven way via a twin neural network. </p>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -35,10 +35,12 @@ The problem with simply linking language to acoustics is that similarity in lang
 
 <p align="justify">We first demonstrated that (1) direct retrieval is insufficient for cross-modal retrieval and that (2) using joint embeddings allows cross-modal retrieval with performance comparable to single-modal retrieval. Cross-modal retrieval with opposite feature types yielded a random performance of 2.4% MAP@3, but with joint embeddings we obtained 71.3% MAP@3.</p>
 
-<p align="justify">Our framework allows the use of out of vocabulary audio or text querying. For example, we considered the query "house", which is not part of the 41 classes and has a more abstract meaning. With text similarity, the top five retrieved items were: "drawer", "telephone", "writing", "gunshot", and "double bass". With lexico-acoustic similarity the items were: "meow", "cough", "finger snapping", "laughter", and "computer keyboard". On the other hand we have an example using the audio query "orchestra", also not included in the 41 classes. With acoustic similarity we retrieved: "applause", "cello", "acoustic guitar", "flute", "fireworks", "violin", and "clarinet". With lexico-acoustic similarity we retrieved "violin", "trumpet", "saxophone", "flute", "double bass", "clarinet", and "cello". It is interesting to note that both single and cross modal results are arguably relevant, but are not the same. </p>
+<p align="justify"> <b> Our framework allows the use of out of vocabulary audio or text querying </b>. For example, we considered the query "house", which is not part of the 41 classes and has a more abstract meaning. With text similarity, the top five retrieved items were: "drawer", "telephone", "writing", "gunshot", and "double bass". With lexico-acoustic similarity the items were: "meow", "cough", "finger snapping", "laughter", and "computer keyboard". On the other hand we have an example using the audio query "orchestra", also not included in the 41 classes. With acoustic similarity we retrieved: "applause", "cello", "acoustic guitar", "flute", "fireworks", "violin", and "clarinet". With lexico-acoustic similarity we retrieved "violin", "trumpet", "saxophone", "flute", "double bass", "clarinet", and "cello". It is interesting to note that both single and cross modal results are arguably relevant, but are not the same. </p>
 
 <h3>Video</h3>
-This project was developed during my 2018 internship at Microsoft Research in the Audio and Acoustics Group, and a video of my presentation is in the following <a href="https://www.microsoft.com/en-us/research/video/a-cross-modal-audio-search-engine-based-on-joint-audio-text-embeddings/">link</a>.
+This project was developed during my 2018 internship at Microsoft Research in the Audio and Acoustics Group, a <a href="https://www.microsoft.com/en-us/research/video/a-cross-modal-audio-search-engine-based-on-joint-audio-text-embeddings/">video</a> of my presentation.
+
+Note: The term "siamese" is derogatory and I avoid it in post-paper references.
 
 <h3>References</h3>
 1. Manocha, Pranay, Rohan Badlani, Anurag Kumar, Ankit Shah, Benjamin Elizalde, and Bhiksha Raj. "Content-based representations of audio using siamese neural networks." In 2018 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), pp. 3136-3140. IEEE, 2018.
