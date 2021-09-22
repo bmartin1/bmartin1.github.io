@@ -6,11 +6,9 @@ img: /assets/img/DCASE_website.jpg
 importance: 2
 ---
 
-<p align="justify">To build NELS, we faced the lack of a standard and public dataset of sound events in Web videos and the lack of state-of-the-art performance on this setup. Hence, I organized the first public large-scale evaluation of Sound Event Recognition on audio from YouTube. The <a href="http://dcase.community/challenge2017/task-large-scale-sound-event-detection">task</a> was part of the 2017 IEEE DCASE challenge, the main event of the field.
-Three more tasks, unrelated to Web audio, were organized by the audio group at Tampere University. All 4 tasks are detailed in [1], which is one of the five most cited papers in the field.
+<p align="justify">To build NELS, we faced the lack of a standard and public dataset of sound events in Web videos and the lack of state-of-the-art performance on this setup. Hence, I organized the first public large-scale evaluation of Sound Event Recognition on audio from YouTube. The <a href="http://dcase.community/challenge2017/task-large-scale-sound-event-detection">task</a> was part of the 2017 IEEE DCASE challenge, the main event of the field. Three more tasks (unrelated to Web audio) were organized by the audio group at Tampere University. All 4 tasks are detailed in [1], one of the five most cited papers in the field.
 </p>
 <br>
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ '/assets/img/DCASE_website.jpg' | relative_url }}" alt="" title="example image"/>
@@ -20,7 +18,7 @@ Three more tasks, unrelated to Web audio, were organized by the audio group at T
     The <a href="http://dcase.community/challenge2017/task-large-scale-sound-event-detection">DCASE website</a> has the task description, database and participants' performance. The task was co-organized with Dr. Emmanuel Vincent leader of the audio group at INRIA. Ankit Shah was a contributor and maintains the <a href="https://github.com/ankitshah009/Task-4-Large-scale-weakly-supervised-sound-event-detection-for-smart-cars">Github repo</a>.
 </div>
 
-<p align="justify">The main task was divided into two sub tasks, tagging and detecting sound events. Subtask A - Tagging consists of assigning a class label to a clip, and Subtask B - Detection consists of also including the timestamps. The metrics were F1 score and segment-based Error Rate respectively. As the baseline system, we provided our NELS Machine Learning algorithm. We chose the topic of smart cars due to its industry relevance and under use of audio in this and other applications in the urban context. For the dataset, we teamed up with Google’s audio group to gather 10-second clips from videos in YouTube. We selected 17 categories of warning sounds and vehicles and a total of 57,000 clips, which was an order of magnitude larger than the largest dataset of sound events at that time. Examples of sounds include "Train horn", "Air horn Truck horn", "Car alarm", "Car", "Car passing by", "Bus", "Truck", "Motorcycle", "Train".</p>
+<p align="justify">The main task was divided into two sub tasks, tagging and detecting sound events. Subtask A - Tagging consists of assigning a class label to a clip, and Subtask B - Detection consists of also including the timestamps. The metrics were F1 score and segment-based Error Rate respectively. As the baseline system, we provided our NELS Machine Learning algorithm. We chose the topic of smart cars due to its industry relevance and under use of audio in this and other applications in the urban context. For the dataset, we teamed up with Google’s Sound Understanding group to gather 10-second clips from YouTube videos. We selected 17 categories of warning sounds and vehicles and a total of 57,000 clips, which was an order of magnitude larger than the largest dataset of sound events at that time. Examples of sounds include "Train horn", "Air horn Truck horn", "Car alarm", "Car", "Car passing by", "Bus", "Truck", "Motorcycle", "Train".</p>
 <br>
 
 <div class="row">
@@ -29,12 +27,12 @@ Three more tasks, unrelated to Web audio, were organized by the audio group at T
     </div>
 </div>
 <div class="caption">
-  DCASE 2017 Task 4: Large-scale weakly supervised sound event detection for smart cars. The main task was divided into two sub tasks, tagging and detecting sound events.
+  DCASE 2017 Task 4: Large-scale weakly supervised sound event detection for smart cars. The Recognition task was divided into two subtasks, tagging and detecting sound events.
 </div>
 
-<p align="justify">The clips had weakly labeled categories, meaning that if we have a 10-second clip that contains "Car horn”,  we don’t know when the sound starts and ends, if it is a single honk, multiple honks or a continuous honking for 10 seconds, and other competing sounds may be present like the sound of car braking.</p>
+<p align="justify">The clips had weakly labeled categories, for example, a 10-second clip containing "Car horn”, will not include its start and end time, nor if it is a single honk, multiple honks or a continuous honking for 10 seconds, other competing sounds may be overlapping like the sound of car braking.</p>
 
-<p align="justify">An analysis of the dataset and results from our task and the three other tasks is detailed in a journal [2]. The average duration of a sound event based on the strong labels is five seconds, which is 50% of the provided 10-second clips. Hence, the importance of designing methods that address how to use weak labels. We received 34 systems from 9 teams and 25 authors. Most of the systems were based on log-mel spectrogram features and Convolutional Neural Networks and considered the temporal information. Warning sounds reported higher performance than vehicle sounds, this could be explained because the former type are designed to convey an alert message. Examples of best and worst performing Warning sounds and their F1 scores are "Screaming" 91.2% and "Ambulance (siren)" - not recognized by 7 systems and confused with "Emergency vehicle (siren)"; Vehicle sounds are "Train" 85.2%  and "Car passing by" - not recognized by 12 systems and confused with "Car".
+<p align="justify">An analysis of the results from our task (and the three other tasks) is detailed in a journal [2]. The average duration of a sound event based on the strong labels is five seconds, which is 50% of the provided 10-second clips. Hence, the importance of designing methods that address how to use weak labels. We received 34 systems from 9 teams and 25 authors. Most of the systems were based on log-mel spectrogram features and Convolutional Neural Networks and considered the temporal information. Warning sounds reported higher performance than vehicle sounds, this could be explained because the former type is designed to convey an alert message. Examples of best and worst performing Warning sounds and their F1 scores are "Screaming" 91.2% and "Ambulance (siren)" - not recognized by 7 systems and confused with "Emergency vehicle (siren)"; Vehicle sounds are "Train" 85.2%  and "Car passing by" - not recognized by 12 systems and confused with "Car".
 
 <p align="justify">The task we organized included a key element of NELS, large-scale audio analysis of weakly-labeled audio from Web videos, thereby engaging the research community into the challenges of the NELS project. In the process, we collected a dataset to train our recognition systems and compare against the state of the art. </p>
 
