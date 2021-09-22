@@ -18,7 +18,7 @@ importance: 1
     A Never-Ending Learner of Sounds (NELS) to hear and understand the Web.
 </div>
 
-<p align="justify"> <b>NELS aims to continuously hear and understand the Web, automatically learn new knowledge about sounds, organize and index audio content, and make the content available for people to query and recover all kinds of information.</b> In doing this, we must address many challenges, for example, the Web has an unbounded number of sounds, training and evaluating Machine Learning models must deal with recordings that are noisy, unstructured, and unlabeled, we must define what knowledge to learn for sounds, and we must understand how to search for sounds, because describing acoustic phenomena in words is hard. For example, the sound of water is one of the most distinguishable sounds, but how to describe it without using the word water?</p>
+<p align="justify"> <b>NELS aims to continuously hear and understand the Web, automatically learn new knowledge about sounds, organize and index audio content, and make the content available for people to query and recover all kinds of information.</b> In doing this, we must address many challenges, for example, the Web has an unbounded number of sounds, training and evaluating Machine Learning models must deal with recordings that are noisy, unstructured, and unlabeled, we must define what knowledge to learn for sounds, and we must understand how to search for sounds, because describing acoustic phenomena in words can be hard. For example, the sound of water is one of the most distinguishable sounds, but how to describe it without using the word water?</p>
 <br>
 
 <div class="row">
