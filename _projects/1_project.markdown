@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 1 NELS
+title: NELS
 description: A Never-Ending Learner of Sounds to hear and understand the Web.
 img: /assets/img/NELS_diagram.png
-importance: 1
+importance: 2
 ---
 
 <p align="justify">Hearing machines that understand sounds like humans do require computational programs that can learn from years of accumulated diverse acoustics. They must use associated knowledge to guide subsequent learning and organize what they hear, learn names for recognizable events, scenes, objects, actions, materials, places, and retrieve sounds by reference to those names. These machines must also continuously improve their hearing competence to encompass all the diversity and scale of the acoustics in the world. Examples of applications are described in my blog post:<a href="https://bmartin1.github.io/blog/2021/everyday-sounds/"> Everyday, sounds occur around us</a>. The ultimate goals of hearing machines inspired my PhD project called Never-Ending Learner of Sounds (NELS) [1,2], which began in 2016.</p>

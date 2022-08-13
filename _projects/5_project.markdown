@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 5 NELS
+title: NELS
 description: NELS limitations categorizing and describing sounds.
 img: /assets/img/lim_airplane.jpg
-importance: 5
+importance: 6
 ---
 
 <p align="justify">Building Machine Learning models for the NELS modules exposed that current categorization limits performance and quality of expression of acoustic phenomena. We summarized the limitations in three main aspects. First, categorization of sounds is highly subjective and can be lexico-acoustically inconsistent, affecting crawling quality and performance of Machine Learning models. Second, how we name sounds in search and retrieval is limited to one or two words, but we should enable elaborated descriptions. Third, to learn knowledge about sounds we need to define names and relationships for acoustic phenomena beyond sound-sources (nouns). From the perspective of NELS, quality of expression is fundamentally a question of human interpretation. </p>

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 2 NELS
+title: NELS
 description: NELS hears audio from YouTube in DCASE.
 img: /assets/img/DCASE_website.jpg
-importance: 2
+importance: 3
 ---
 
 <p align="justify">To build NELS, we faced the lack of a standard and public dataset of sound events in Web videos and the lack of state-of-the-art performance on this setup. Hence, I organized the first public large-scale evaluation of Sound Event Recognition on audio from YouTube. The <a href="http://dcase.community/challenge2017/task-large-scale-sound-event-detection">task</a> was part of the 2017 IEEE DCASE challenge, the main event of the field. Three more tasks (unrelated to Web audio) were organized by the audio group at Tampere University. All 4 tasks are detailed in [1], one of the five most cited papers in the field.

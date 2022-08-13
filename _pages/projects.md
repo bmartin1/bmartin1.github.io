@@ -2,7 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: This section is in development.
+description: 
 nav: true
 ---
 

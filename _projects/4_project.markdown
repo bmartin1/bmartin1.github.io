@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 4 NELS
+title: NELS
 description: NELS allows searching indexed audio using audio or text queries.
 img: /assets/img/NELS_crossdiagram.png
-importance: 4
+importance: 5
 ---
 
 <p align="justify">NELS crawls audio from YouTube and indexes it with Sound Event Recognition. The indexed audio content is made available for search and retrieval through a website. NELS takes a text query and used linguistic similarity to compare against the class labels of the indexed audio content. We also studied audio queries and acoustic similarity for retrieval [1,2]. <b>The problem with simply linking language to acoustics is that similarity in language semantics does not imply similarity in acoustic semantics </b>. For example, we may query using the text “car brakes” and the most similar text in our database could be “car engine”, however the acoustics are very different. On the other hand, we might query with an audio recording containing a low-frequency rumble sound, and the most similar audio in our database could be from the class “heart murmur", however the original sound was "engine", which is totally different in linguistic semantics.</p>

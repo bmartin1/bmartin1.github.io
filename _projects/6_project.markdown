@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 6 NELS
+title: NELS
 description: NELS draws domain knowledge from Psychology to enhance the quality of expression of acoustic phenomena.
 img: /assets/img/dishwashing.jpg
-importance: 6
+importance: 7
 ---
 
 <p align="justify"> To enhance the quality of expression of acoustic phenomena, I studied an interdisciplinary solution that combined Machine Learning and Psychology. Psychology has numerous human studies to determine what are the acoustic properties that listeners consider to perceive and describe sounds. Acoustic properties are mainly derived from three areas, Cognition, Psychomechanics and Psychoacoustics. Inspired by the acoustic properties that were successful in listening experiments, we selected categories that could result in Machine Learning models with reliable performance. The new models should expand the expressive capabilities of the three NELS modules, crawling audio from the Web, indexing audio content, and searching for it. This was the first focused study, to the best of our knowledge, on training Machine Learning models based on acoustic properties. </p>

@@ -1,9 +1,9 @@
 ---
 layout: page
-title: 3 NELS
+title: NELS
 description: NELS improves hearing with unlabeled audio.
 img: /assets/img/NELS_semi.png
-importance: 3
+importance: 4
 ---
 
 <p align="justify">NELS can take advantage of the continuously crawled unlabeled Web audio to improve its recognition models using semi-supervised learning as described in our paper [1]. Semi-supervised learning can be summarized in the following steps. First, a sound recognition system is trained using audio with labeled sound events and then evaluated in a test set. The system is used to recognize and label sounds on an often large unlabeled set. Using a selection of the newly labeled audio, the system is re-trained, then evaluated again with the test set, often with performance improvement. The process is repeated until there is no improvement. One question to conisder is <b>"Should we re-train sound recognition systems based on acoustic similarity only or based on both acoustic and semantic similarity?" </b></p>
