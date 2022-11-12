@@ -14,6 +14,12 @@ importance: 1
 <div class="caption">
 </div>
 
-<p align="justify">  Project CLAP aims to advance the state-of-the-art audio technologies and develop the next generation framework for understanding acoustic cues. Refer to the Microsoft's <a href="https://www.microsoft.com/en-us/research/project/project-clap/"> Project CLAP page</a> </p>
+<p align="justify">  Project CLAP aims to advance the state-of-the-art audio technologies and develop the next generation framework for understanding acoustic cues.
+
+
+We released our CLAP code: <a href="https://github.com/microsoft/CLAP"> github.com/microsoft/CLAP.</a>
+
+
+Microsoft's <a href="https://www.microsoft.com/en-us/research/project/project-clap/"> Project CLAP page</a> </p>
 
 Date: Published on June 2022.

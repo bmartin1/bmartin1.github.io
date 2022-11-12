@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-08-6 07:59:00-0400
+date: 2022-11-1 07:59:00-0400
 inline: true
 ---
 
-My paper ["Identifying Actions for Sound Event Classification"](https://github.com/bmartin1/Identifying_Actions_for_Sound_Event_Classification), combining Psychology and Machine Learning, was accepted to [WASPAA 2021](https://www.waspaa.com/)! :grin:
+We got accepted our proposal to organize a Special Session in ICASSP 2023 called "Synergy between human and machine approaches to sound/scene recognition and processing".

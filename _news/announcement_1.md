@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2021-03-31 07:59:00-0400
+date: 2022-11-12 07:59:00-0400
 inline: true
 ---
 
-I was invited to become a member of the Technical Program Chairs @ [DCASE 2021](http://dcase.community/workshop2021/organizers) :sparkles:
+We released our CLAP code: [github.com/microsoft/CLAP](https://github.com/microsoft/CLAP)
